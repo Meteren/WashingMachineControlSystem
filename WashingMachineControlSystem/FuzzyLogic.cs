@@ -353,9 +353,12 @@ namespace WashingMachineControlSystem
 
             foreach (var kvp in allMamdaniValues[Outputs.detergentEn])
             {
-                if (kvp.Key == "very_little" || kvp.Key == "very_much")
+                if (kvp.Key == "very_little")
                 {
                     avarage += detergentMembers[kvp.Key][2] * kvp.Value;
+                }else if(kvp.Key == "very much")
+                {
+                    avarage += detergentMembers[kvp.Key][1] * kvp.Value;
                 }
                 else
                 {
@@ -373,9 +376,12 @@ namespace WashingMachineControlSystem
 
             foreach (var kvp in allMamdaniValues[Outputs.durationEn])
             {
-                if (kvp.Key == "short" || kvp.Key == "long")
+                if (kvp.Key == "short")
                 {
                     avarage += durationMembers[kvp.Key][2] * kvp.Value;
+                }else if(kvp.Key == "long")
+                {
+                    avarage += durationMembers[kvp.Key][1] * kvp.Value;
                 }
                 else
                 {
@@ -393,9 +399,12 @@ namespace WashingMachineControlSystem
 
             foreach (var kvp in allMamdaniValues[Outputs.rotationSpeedEn])
             {
-                if (kvp.Key == "sensitive" || kvp.Key == "strong")
+                if (kvp.Key == "sensitive")
                 {
                     avarage += rotationSpeedMembers[kvp.Key][2] * kvp.Value;
+                }else if(kvp.Key == "strong")
+                {
+                    avarage += rotationSpeedMembers[kvp.Key][1] * kvp.Value;
                 }
                 else
                 {
