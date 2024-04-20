@@ -440,8 +440,8 @@ namespace WashingMachineControlSystem
 
         private Dictionary<string, List<double>> rotationSpeedMembers = new Dictionary<string, List<double>>()
         {
-            {"sensitive",new List<double>(){-5.8, -2.8, 0.5, 1.5 }},
-            {"normal_sensitive", new List<double>(){ 0.5, 2.75, 5 } },
+            {"sensitive",new List<double>(){-5.8, -2.8, 0.514, 1.5 }},
+            {"normal_sensitive", new List<double>(){ 0.514, 2.75, 5 } },
             {"normal", new List<double>(){2.75, 5, 7.25 } },
             {"normal_strong" ,new List<double>(){5, 7.25, 9.5}},
             {"strong",new List<double>(){8.5, 9.5, 12.8, 15.2 }}
